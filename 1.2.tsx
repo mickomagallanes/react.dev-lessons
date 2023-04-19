@@ -1,3 +1,5 @@
+/***************** Importing and Exporting Components *********************/
+
 // - Split components into different files
 
 // - Next.js root component is different for every page
