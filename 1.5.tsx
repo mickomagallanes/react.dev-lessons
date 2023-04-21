@@ -1,12 +1,12 @@
 /***************** Passing Props to a Component *********************/
 
 /* - Props might remind you of HTML attributes, but you can pass any JavaScript value through them,
-   including objects, arrays, and functions.
-*/
+ *  including objects, arrays, and functions.
+ */
 
 /* - Props are the information that you pass to a JSX tag. For example, className, src, alt, width,
-   and height are some of the props you can pass to an <img>
-*/
+ *  and height are some of the props you can pass to an <img>
+ */
 
 /* Passing props to a component 
    Step 1. Pass props to the child component:
@@ -83,7 +83,17 @@ export default function Profile() {
 
 // - Props reflect a component’s data at any point in time, rather than only in the beginning.
 
-// - However, props are immutable—a term from computer science meaning “unchangeable”
+/* - However, props are immutable—a term from computer science meaning “unchangeable”. Don’t try to “change props”.
+ *  When you need to respond to the user input (like changing the selected color), you will need to “set state”
+ */
 
-// - Don’t try to “change props”. When you need to respond to the user input (like
-// changing the selected color), you will need to “set state”
+/**
+ * Recap
+ * - To pass props, add them to the JSX, just like you would with HTML attributes.
+ * - To read props, use the function Avatar({ person, size }) destructuring syntax.
+ * - You can specify a default value like size = 100, which is used for missing and undefined props.
+ * - You can forward all props with <Avatar {...props} /> JSX spread syntax, but don’t overuse it!
+ * - Nested JSX like <Card><Avatar /></Card> will appear as Card component’s children prop.
+ * - Props are read-only snapshots in time: every render receives a new version of props.
+ * - You can’t change props. When you need interactivity, you’ll need to set state.
+ */
