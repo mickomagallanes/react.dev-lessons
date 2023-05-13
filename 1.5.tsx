@@ -81,10 +81,22 @@ export default function Profile() {
   );
 }
 
-// - Props reflect a component’s data at any point in time, rather than only in the beginning.
+/**
+ * - This example illustrates that a component may receive different props over time.
+ *  Props are not always static! Here, the time prop changes every second, and the
+ *  color prop changes when you select another color. Props reflect a component’s data at
+ *  any point in time, rather than only in the beginning.
+ *
+ * */
 
 /* - However, props are immutable—a term from computer science meaning “unchangeable”. Don’t try to “change props”.
  *  When you need to respond to the user input (like changing the selected color), you will need to “set state”
+ */
+
+/**
+ * Don’t try to “change props”. When you need to respond to the user input (like changing the
+ * selected color), you will need to “set state”, which you can learn about
+ * in State: A Component’s Memory.
  */
 
 /**
