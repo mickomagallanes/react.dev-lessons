@@ -87,6 +87,8 @@ export default function Profile() {
  *  color prop changes when you select another color. Props reflect a component’s data at
  *  any point in time, rather than only in the beginning.
  *
+ * - Component re-renders when a prop changes
+ *
  * */
 
 /* - However, props are immutable—a term from computer science meaning “unchangeable”. Don’t try to “change props”.

@@ -113,7 +113,7 @@
          itemContent = name + " ✔";
       }
 
- * - This style is the most verbose, but it’s also the most flexible. Here it is in action:
+ * - This style is the most verbose, but it’s also the most flexible. 
  */
 
 /**
